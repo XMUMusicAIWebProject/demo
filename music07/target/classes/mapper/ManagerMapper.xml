@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.musicai.webdemo.dao.ManagerMapper">
+    <select id="queryManagerByAccount" resultType="com.musicai.webdemo.entity.Manager">
+        SELECT *
+        FROM musicweb.admin
+        WHERE account=#{account}
+    </select>
+</mapper>
